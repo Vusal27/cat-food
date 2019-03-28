@@ -1,0 +1,17 @@
+.active {
+    .packs__wrap {
+        box-shadow: inset 0 0 0 4px #d91667;
+        &:after {
+            background: #d91667;
+        }
+    }
+    .packs__weight {
+        background: #d91667;
+    }
+    ._default {
+        display: none;
+    }
+    ._active {
+        display: block;
+    }
+}
