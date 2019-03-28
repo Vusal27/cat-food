@@ -93,7 +93,6 @@ textarea {
   -ms-flex-align: center;
   align-items: center;
   background: url("../images/background.png") 0 0/cover no-repeat;
-  background-size: 2650px;
   -webkit-box-shadow: inset 0px 250px 250px -25px black, inset 0px -250px 250px -25px black;
   box-shadow: inset 0px 250px 250px -25px black, inset 0px -250px 250px -25px black;
 }
@@ -356,4 +355,10 @@ textarea {
   top: 0;
   left: 0;
   z-index: 10;
+}
+
+@media (max-width: 480px) {
+  .disabled:after {
+    width: 290px;
+  }
 }
