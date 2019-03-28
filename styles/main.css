@@ -122,6 +122,12 @@ textarea {
   position: relative;
 }
 
+@media (max-width: 480px) {
+  .packs__item {
+    width: 290px;
+  }
+}
+
 .packs__wrap {
   height: 480px;
   width: 320px;
@@ -149,7 +155,7 @@ textarea {
 
 .packs__wrap:before {
   content: '';
-  border: 22px solid #f2f2f2;
+  border: 22px solid transparent;
   border-top: 22px solid black;
   border-left: 22px solid black;
   position: absolute;
@@ -248,6 +254,7 @@ textarea {
   color: white;
   margin-top: 15px;
   text-align: center;
+  min-height: 30px;
 }
 
 .packs__link {
@@ -278,23 +285,6 @@ textarea {
   color: #2da8e5;
 }
 
-.hover_active .packs__wrap {
-  -webkit-box-shadow: inset 0 0 0 4px #e62e7a;
-  box-shadow: inset 0 0 0 4px #e62e7a;
-}
-
-.hover_active .packs__weight {
-  background: #e62e7a;
-}
-
-.hover_active .packs__subtitle {
-  display: none;
-}
-
-.hover_active .packs__subtitle--hover {
-  display: block;
-}
-
 .active .packs__wrap {
   -webkit-box-shadow: inset 0 0 0 4px #d91667;
   box-shadow: inset 0 0 0 4px #d91667;
@@ -316,7 +306,28 @@ textarea {
   display: block;
 }
 
+.hover_active .packs__wrap {
+  -webkit-box-shadow: inset 0 0 0 4px #e62e7a;
+  box-shadow: inset 0 0 0 4px #e62e7a;
+}
+
+.hover_active .packs__weight {
+  background: #e62e7a;
+}
+
+.hover_active .packs__subtitle {
+  display: none;
+}
+
+.hover_active .packs__subtitle--hover {
+  display: block;
+}
+
 .disabled .packs__wrap {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   -webkit-box-shadow: inset 0 0 0 4px #b3b3b3;
   box-shadow: inset 0 0 0 4px #b3b3b3;
   cursor: initial;
