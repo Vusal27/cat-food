@@ -10,7 +10,7 @@
   <tbody>
     <tr>
       <td><code>Ссылка на сайт</code></td>
-      <td>https://vusal27.github.io/cat/</td>
+      <td>https://vusal27.github.io/cat-food/</td>
     </tr>
     <tr>
       <td><code>git clone 'url'</code></td>
