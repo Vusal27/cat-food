@@ -32,5 +32,8 @@
         top: 0;
         left: 0;
         z-index: 10;
+        @include phone() {
+            width: 290px;
+        }
     }
 }
